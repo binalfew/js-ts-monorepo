@@ -1,0 +1,45 @@
+{
+  "name": "js-ts-monotrepos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:binalfew/js-ts-monorepos.git",
+  "author": "Binalfew Kassa <binalfew@yahoo.com>",
+  "license": "BSD-2-Clause",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "scripty",
+    "clean": "scripty",
+    "lint": "scripty",
+    "test": "scripty",
+    "greet": "scripty"
+  },
+  "scripty": {
+    "path": "./scripts/workspace"
+  },
+  "volta": {
+    "node": "16.15.0",
+    "yarn": "1.22.18"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@commitlint/config-lerna-scopes": "^16.2.4",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "commitlint": "^16.2.4",
+    "eslint": "^8.14.0",
+    "husky": "^7.0.4",
+    "lerna": "^4.0.0",
+    "lerna-changelog": "^2.2.0",
+    "rimraf": "^3.0.2",
+    "scripty": "^2.1.0"
+  }
+}
