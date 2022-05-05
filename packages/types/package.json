@@ -1,6 +1,6 @@
 {
   "name": "@shlack/types",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "publishConfig": {
@@ -21,5 +21,6 @@
     "@types/jest": "^27.5.0",
     "jest": "^28.0.3",
     "typescript": "^4.0.3"
-  }
+  },
+  "gitHead": "14aa610f256d9976983a607ad91937b7a00801b3"
 }
